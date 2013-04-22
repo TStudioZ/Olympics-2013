@@ -73,9 +73,9 @@ namespace Bugs
                     program = program.Replace("\r\n", "");
                     writer.Write(program);
                     writer.WriteLine();
+                    parent.FileSavedAs(filenameOut);
                 }
             }
-            parent.FileSavedAs(filenameOut);
         }
     }
 }
